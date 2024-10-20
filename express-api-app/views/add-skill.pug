@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel="stylesheet" href="/styles.css")
+  body
+    h1 #{title}
+    form(action="/admin/add-skill" method="POST")
+      label(for="name") Skill Name:
+      input(type="text" name="name" required)
+      br
+      label(for="proficiency") Proficiency Level:
+      select(name="proficiency" required)
+        option(value="Beginner") Beginner
+        option(value="Intermediate") Intermediate
+        option(value="Advanced") Advanced
+      br
+      button(type="submit") Add Skill
+      
+    // Button to go back to the home page
+    form(action="/" method="get")
+      button(type="submit") Home

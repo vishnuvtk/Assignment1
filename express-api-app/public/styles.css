@@ -1,0 +1,14 @@
+/* public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+label, input, select, textarea {
+  display: block;
+  margin-top: 8px;
+}
+input, select, textarea {
+  width: 300px;
+}
+button {
+  margin-top: 12px;
+}
